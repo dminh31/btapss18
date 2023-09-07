@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let products = [
+            { id: 1, name: "Milk", count: 100 },
+            { id: 2, name: "Yakult", count: 100 },
+            { id: 3, name: "Butter", count: 100, }
+        ];
+        let obj={
+            id:4,
+            name:"ra",
+            count:101,
+        }
+        products.push(obj);
+        // console.log(products);
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].id==2) {
+                products.splice(i,1);
+                console.log(products);
+            }
+        }
+
+        for (let j = 0; j < products.length; j++) {
+            if (products[j].id==3) {
+                products[j].count=0;
+                console.log(products);
+            }
+        }
+    </script>
+</body>
+
+</html>

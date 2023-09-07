@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+            id: 1,
+            name: "Nguyen Van A",
+            gender:"nam",
+            age:20,
+            mark:8
+        }
+        let newStudent = {
+            id: 2,
+            name: "baobao",
+            gender: "nam",
+            age: 22,
+            mark: 9
+        }
+        let students= [student,newStudent]
+        console.log(students[1].name);
+        console.log(students[1].gender);
+        console.log(students[1].age);
+        console.log(students[1].mark);
+
+        if (newStudent.mark>student.mark) {
+            console.log(newStudent);
+        }else{
+            console.log(student);
+        }
+
+        let newStudent2={
+            id: 31,
+            name: "dminh",
+            gender: "nam",
+            age: 19,
+            mark: 9
+        }
+        students.push(newStudent2)
+        
+        let total=(student.mark+newStudent.mark+newStudent2.mark)/3
+        if(total>7.5){
+            console.log("lớp khá");
+        }else if(total>=5 && total <7.5){
+            console.log("lớp trung bình");
+        }else {
+            console.log("lớp yếu");
+        }
+    </script>
+</body>
+</html>
